@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Straight to the Point Archery</title>
+      <link rel="stylesheet" href="styles/archery.css">
+  </head>
+<body>
+        <img src="images/logo2.jpg" alt="Vertical double arrow" style="width: 200px;height: 200px;">
+    <div class="topcenter">
+      <h1>Bullseye Everytime!</h1>
+  </div>
+ <img src=http://wdd5613.kocfiles.net/Benjamin_Stevenson/HTML/IMAGES/bullseye.gif style="width: 400px;">
+    <div class="topright">
+      <p>Straight to the Point Archery
+        <br>528 Nock Point Ln
+        <br>Tacoma, WA 98412
+        <br><a href=archery-education@example.com>archery-education@example.com</a>
+        <br>(253)555-1010</p>
+  </div>
+  
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li class="dropdown">
+          <a href="classes.html" class="dropbtn">Services</a>
+        <div class="dropdown-content">
+          <a href="classes.html">Classes</a>
+          <a href="#Lessons">Private Lessons</a>
+        </div>
+        </li>
+        <li><a href="instructors.html">Instructors</a></li>
+      </ul>
+  <div class="content display-container">
+    <img class="mySlides" alt="kids practicing archery" src="images/class1.jpg" height="400px" width="600px">
+    <img class="mySlides" alt="kids practicing archery" src="images/class2.jpg" height="400px" width="600px">
+    <img class="mySlides" alt="kids practicing archery" src="images/lesson1.jpg" height="400px" width="600px">
+    <img class="mySlides" alt="kids practicing archery" src="images/lesson2.jpg" height="400px" width="600px">
+    <img class="mySlides" alt="kids practicing archery" src="images/students-competing.jpg" height="400px" width="600px">
+    
+    <a class="btn-floating display-left" onclick="plusDivs(-1)">&#10094;</a>
+    <a class="btn-floating display-right" onclick="plusDivs(1)">&#10095;</a>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+ </div>
+  
+  <div class="bottom">
+    <footer>
+    <p>Posted by: C Kee</p>
+    <p>Hours of Operation M-F 9 to 5 Sat 10 to 7 Sun 12 to 6 <a href="archery-education@example.com">archery-education@example.com</a>.(Social Media Links)</p>
+    </footer>
+  </div>   
+</body>
+</html>
